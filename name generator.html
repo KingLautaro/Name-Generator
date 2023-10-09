@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Name Generator</title>
+</head>
+<body>
+    <h1>Random Name Generator</h1>
+    <button onclick="generateName()">Generate Name</button>
+    <p id="generatedName"></p>
+
+    <script>
+        function generateName() {
+            // List of sample names
+                const names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Hannah", "Isaac", "Jack", "Thomas", "Levi", "Nile", "Jay", "ben","Amy", "Jane", "Aaran","Tiana", "Brandon", "Laura","Mike", "Duran", "Selena"];
+
+            // Generate a random index
+            const randomIndex = Math.floor(Math.random() * names.length);
+
+            // Get the random name
+            const randomName = names[randomIndex];
+
+            // Display the random name
+            document.getElementById("generatedName").textContent = randomName;
+        }
+    </script>
+</body>
+</html>
